@@ -5,26 +5,20 @@ import java.util.Scanner;
 public class Question4 {
 
 	public static void main(String[] args) {
+		int age;
+		Scanner check = new Scanner(System.in);
+			System.out.print("Enter your age: ");
+		age = check.nextInt();
 		
-	Scanner input = new Scanner (System.in);
-	System.out.print("Enter you age: ");
-	int age = input.nextInt();
-	System.out.println("Your age is: " + age);
-	if(age >= 18)
-	{
-	  System.out.println("eligible to vote");
-	  
-	   
-	}
-	else
-	{
-	System.out.println("not eligible to vote");
-	
-	
-	
-	
+		if (age >= 18)
+			System.out.print("You are eligible to vote.");
+		
+		
+		else if (age < 18)
+		System.out.println("You are not eligible to vote");
+		
+			check.close();
+		}
 	}
 
-	}
 
-}
